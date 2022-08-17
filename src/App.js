@@ -1,8 +1,17 @@
+import GlobalStyle from "./styles/globalStyles";
 
+import Header from "./Home/Header"
+import Main from "./Home/Main";
+import ClientTestimonials from "./Home/ClientTestimonials";
 
 function App() {
   return (
-    <h1>teste</h1>
+    <>
+    <GlobalStyle/>
+    <Header/>
+    <Main/>
+    <ClientTestimonials/>
+    </>
   );
 }
 
