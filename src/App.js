@@ -4,6 +4,7 @@ import Header from "./Home/Header"
 import Main from "./Home/Main";
 import ClientTestimonials from "./Home/ClientTestimonials";
 import Galery from "./Home/Galery";
+import Footer from "./Home/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Main/>
     <ClientTestimonials/>
     <Galery/>
+    <Footer/>
     </>
   );
 }
