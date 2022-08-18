@@ -1,12 +1,11 @@
 import { Card } from "./style"
 
-const CardText = ({title, paragraph, gridArea}) => {
+const CardText = ({title, paragraph, gridArea, lineColor}) => {
     return (
-        <Card gridArea={gridArea}>
+        <Card gridArea={gridArea} lineColor={lineColor}>
             <h2>{title}</h2>
             <p>{paragraph}</p>
-            <button>Learn more </button>
-            <span></span>
+            <button >Learn more </button>
         </Card>
     )
 }

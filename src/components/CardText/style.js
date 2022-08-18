@@ -24,6 +24,32 @@ export const Card = styled.div `
         text-transform: uppercase;
         font-family: var(--Fraunces);
         font-weight: 900;
-        border-bottom: 2px solid red;
+        position: relative;
+    }
+
+    button::after {
+    content: "";
+    background-color: ${props => props.lineColor};
+    z-index: -1;
+    border-radius: 3px;
+    width: 11.3rem;
+    display: block;
+    height: 0.8em;
+    position: absolute;
+    top: 10px;
+    left: -0.8rem;
+    opacity: 0.4;
+    transition: all .5s;
+    }
+    button:hover::after {
+        opacity: 1;
+    }
+
+    hr {
+        height: 1rem;
+        width: 10rem;
+        background-color: red;
+        border: none;
+        border-radius: 5px;
     }
 `

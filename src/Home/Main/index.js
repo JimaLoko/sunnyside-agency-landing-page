@@ -14,6 +14,7 @@ const Main = () => {
              title={"Transform your brand"} 
              paragraph={" We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you. "}
              gridArea="item1"
+             lineColor="hsl(51, 100%, 49%)"
              />
 
              <CardImg bgImg={bgImg2 } gridArea="item2" />
@@ -23,6 +24,7 @@ const Main = () => {
              title={"Stand out to the right audience"} 
              paragraph={" Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. "}
              gridArea="item4"
+             lineColor="hsl(7, 99%, 70%)"
              />
 
              <CardImgtext
