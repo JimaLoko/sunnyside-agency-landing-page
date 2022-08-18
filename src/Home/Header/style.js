@@ -36,5 +36,6 @@ export const HeaderDiv = styled.header `
     }
     .arrow img {
         max-width: 100%;
+        animation: float 2s infinite ease-in-out;
     }
 `
