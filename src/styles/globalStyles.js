@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        font-size: 1.8rem
+        font-size: 1.8rem;
     }
 
     button {

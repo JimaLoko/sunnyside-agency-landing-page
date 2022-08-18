@@ -3,6 +3,7 @@ import GlobalStyle from "./styles/globalStyles";
 import Header from "./Home/Header"
 import Main from "./Home/Main";
 import ClientTestimonials from "./Home/ClientTestimonials";
+import Galery from "./Home/Galery";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Header/>
     <Main/>
     <ClientTestimonials/>
+    <Galery/>
     </>
   );
 }
