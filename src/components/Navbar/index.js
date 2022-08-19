@@ -9,9 +9,8 @@ const Navbar = () => {
     const showModal = (r) => {
         setMod(r)
         modal.classList.toggle(mod)
-        
-        console.log(modal)
     }
+    
     return (
         <nav>
             <Hamburger onClick={() => showModal('active')}><img src={hamburger} alt="icon hamburger"/></Hamburger>

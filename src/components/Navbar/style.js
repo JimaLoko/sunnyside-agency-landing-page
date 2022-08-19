@@ -56,7 +56,11 @@ export const NavBar = styled.ul `
             border-bottom-color: transparent;
             }
         opacity: 0;
+        pointer-events: none;
+        transition: all .3s ease-in-out;
+        transform: translateY(-20px);
         position: absolute;
+        z-index: 2;
         top: 9rem;
         right: 3rem;
         width: 85%;
@@ -83,9 +87,12 @@ export const NavBar = styled.ul `
         color: var(--White);
         background-color: var(--Yellow);
         }
-    }
-    &.active {
-        opacity: 1;
+        &.active {
+            opacity: 1;
+            pointer-events: all;
+            transform: translateY(0);
+            box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.69);
+        }
     }
 `
 export const Hamburger = styled.button `

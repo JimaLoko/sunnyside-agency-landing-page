@@ -40,10 +40,17 @@ export const HeaderDiv = styled.header `
         animation: float 2s infinite ease-in-out;
     }
 
-    @media (max-width:1050px) {
-        /* background: url(${bgImgMobile}) no-repeat center; */
+    @media (max-width:600px) {
+        height: 58rem;
+        background: url(${bgImgMobile}) no-repeat center;
+        background-size: cover;
         h1 {
             font-size: 3.5rem;
+        }
+        .arrow {
+            width: 8rem;
+            height: 10rem;
+            margin-top: -3.3rem;
         }
     }
 `
