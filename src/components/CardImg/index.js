@@ -1,8 +1,8 @@
 import { Card } from "./style"
 
-const CardImg = ({bgImg}) => {
+const CardImg = ({bgImg, bgImgMobile}) => {
     return (
-        <Card bgImg={bgImg}/>
+        <Card bgImg={bgImg} bgImgMobile={bgImgMobile}/>
     )
 }
 

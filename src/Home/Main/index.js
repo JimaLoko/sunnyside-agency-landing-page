@@ -2,9 +2,13 @@ import CardText from "../../components/CardText"
 import CardImgtext from "../../components/CardImgText"
 import CardImg from "../../components/CardImg"
 import bgImg1 from "../../images/desktop/image-graphic-design.jpg"
+import bgImg1Mobile from "../../images/mobile/image-graphic-design.jpg"
 import bgImg2 from "../../images/desktop/image-transform.jpg"
+import bgImg2Mobile from "../../images/mobile/image-transform.jpg"
 import bgImg3 from "../../images/desktop/image-stand-out.jpg"
+import bgImg3Mobile from "../../images/mobile/image-stand-out.jpg"
 import bgImg4 from "../../images/desktop/image-photography.jpg"
+import bgImg4Mobile from "../../images/mobile/image-photography.jpg"
 import { MainDiv } from "./style"
 
 const Main = () => {
@@ -17,8 +21,8 @@ const Main = () => {
              lineColor="hsl(51, 100%, 49%)"
              />
 
-             <CardImg bgImg={bgImg2 } gridArea="item2" />
-             <CardImg bgImg={bgImg3 } gridArea="item3" />
+             <CardImg bgImg={bgImg2} bgImgMobile={bgImg2Mobile} gridArea="item2" />
+             <CardImg bgImg={bgImg3} bgImgMobile={bgImg3Mobile} gridArea="item3" />
 
              <CardText
              title={"Stand out to the right audience"} 
@@ -33,6 +37,7 @@ const Main = () => {
              gridArea="item5"
              textColor="hsl(167, 40%, 24%)"
              bgImg={bgImg1}
+             bgImgMobile={bgImg1Mobile}
              />
 
              <CardImgtext
@@ -41,6 +46,7 @@ const Main = () => {
              gridArea="item6"
              textColor="hsl(198, 62%, 26%)"
              bgImg={bgImg4}
+             bgImgMobile={bgImg4Mobile}
              />
         </MainDiv>
     )

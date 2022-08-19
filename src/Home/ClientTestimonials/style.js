@@ -9,6 +9,17 @@ export const Container = styled.section `
     grid-template-areas: 
     "title title title"
     "item1 item2 item3";
+
+    @media (max-width: 750px) {
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows:  15rem repeat(3, 1fr);
+        grid-template-areas: 
+        "title"
+        "item1"
+        "item2"
+        "item3";
+    }
 `
 
 export const Title = styled.h2 `
@@ -21,4 +32,9 @@ grid-area: title;
     text-transform: uppercase;
     text-align: center;
     margin-top: 9rem;
+
+    @media (max-width: 750px) {
+        font-size: 1.5rem;
+        margin-top: 7rem;
+    }
 `

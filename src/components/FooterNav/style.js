@@ -31,4 +31,9 @@ export const Nav = styled.ul `
         filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(231deg) brightness(101%) contrast(102%);
         transform: scale(1.1);
     }
+    @media (max-width:700px) {
+        li:not(:first-child) {
+        margin-left: 2.5rem;
+    }
+    }
 `

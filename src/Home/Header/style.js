@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import bgImg from "../../images/desktop/image-header.jpg"
+import bgImgDesk from "../../images/desktop/image-header.jpg"
+import bgImgMobile from "../../images/mobile/image-header.jpg"
 
 export const HeaderDiv = styled.header `
-    background: url(${bgImg}) center;
+    background: url(${bgImgDesk}) center;
     background-size: cover;
     width: 100%;
     height: 80rem;
@@ -37,5 +38,12 @@ export const HeaderDiv = styled.header `
     .arrow img {
         max-width: 100%;
         animation: float 2s infinite ease-in-out;
+    }
+
+    @media (max-width:1050px) {
+        /* background: url(${bgImgMobile}) no-repeat center; */
+        h1 {
+            font-size: 3.5rem;
+        }
     }
 `

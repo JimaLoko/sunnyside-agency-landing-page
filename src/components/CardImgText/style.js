@@ -23,4 +23,20 @@ export const Card = styled.div `
         font-family: var(--Barlow);
         font-weight: 600;
     }
+
+    @media (max-width:450px) {
+        background: url(${props => props.bgImgMobile}) no-repeat top center;
+        background-size: cover;
+        padding: 3.2rem;
+
+        h2 {
+
+        }
+
+        p {
+            font-size: 1.5rem;
+            width: 101%;
+            line-height: 3rem;
+        }
+    }
 ` 

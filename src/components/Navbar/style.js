@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Nav = styled.nav `
+    position: relative;
+`
+
 export const NavBar = styled.ul `
     display: flex;
     list-style: none;
@@ -37,5 +41,59 @@ export const NavBar = styled.ul `
         border-bottom: 2px solid var(--White);
         padding-bottom: .5rem;
     }
-    
+    @media (max-width:1050px) {
+        ::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            right: 0;
+            border-color: var(--grayish-blue);
+            border-style: solid;
+            border-width: 20px 20px 0 20px;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-right-color: hsl(0, 0%, 100%);
+            border-bottom-color: transparent;
+            }
+        opacity: 0;
+        position: absolute;
+        top: 9rem;
+        right: 3rem;
+        width: 85%;
+        border-radius: 10px 0 10px 10px;
+        flex-direction: column;
+        background-color: white;
+        padding: 3rem 0;
+
+        li:not(:first-child) {
+            margin-left: 0;
+            margin-top: 3rem;
+        }
+
+        button {
+            color: var(--Dark-grayish-blue);
+            font-family: var(--Barlow);
+            font-weight: 600;
+        }
+
+        li:last-child button {
+        background-color: var(--Yellow);
+        }
+        li:last-child button:hover {
+        color: var(--White);
+        background-color: var(--Yellow);
+        }
+    }
+    &.active {
+        opacity: 1;
+    }
+`
+export const Hamburger = styled.button `
+    display: none;
+    border: none;
+    background: none;
+
+    @media (max-width:1050px) {
+        display: block;
+    }
 `

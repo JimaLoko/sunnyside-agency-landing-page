@@ -16,6 +16,13 @@ export const Container = styled.div `
         width: 77%;
         line-height: 3rem;
     }
+
+    @media (max-width: 750px) {
+        p {
+            width: 112%;
+            margin-bottom: 3rem;
+        }
+    }
 `
 
 export const Image = styled.div `
@@ -25,6 +32,9 @@ export const Image = styled.div `
     img {
         max-width: 100%;
         border-radius: 50%;
+    }
+    @media (max-width: 750px) {
+        margin-bottom: 2.5rem;
     }
 `
 
@@ -42,5 +52,8 @@ export const User = styled.div `
         font-family: var(--Barlow);
         font-weight: 600;
         font-size: 1.6rem;
+    }
+    @media (max-width: 750px) {
+        margin-bottom: 7rem;
     }
 `

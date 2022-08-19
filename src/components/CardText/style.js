@@ -52,4 +52,23 @@ export const Card = styled.div `
         border: none;
         border-radius: 5px;
     }
+    @media (max-width:1050px) {
+        text-align: center;
+        padding: 5rem 0 5rem 0;
+
+        h2 {
+            font-size: 3.4rem;
+            width: 97%;
+            margin: 0 auto 4rem auto;
+        }
+
+        p {
+            width: 86%;
+            line-height: 2.6rem;
+            margin: 0 auto 3rem auto;
+            color: var(--Dark-grayish-blue);
+            font-family: var(--Barlow);
+            font-weight: 600;
+        }
+    }
 `
