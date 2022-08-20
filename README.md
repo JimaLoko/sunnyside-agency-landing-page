@@ -24,19 +24,19 @@ Users should be able to:
 
 Mobile design
 
-![](../sunnyside-agency-landing-page/src/design/mobile-design.jpg)
+![](src/design/mobile-design.jpg)
 
 Mobile menu
 
-![](../sunnyside-agency-landing-page/src/design/mobile-menu.jpg)
+![](src/design/mobile-menu.jpg)
 
 Desktop design
 
-![](../sunnyside-agency-landing-page/src/design/desktop-design.jpg)
+![](src/design/desktop-design.jpg)
 
 Active states
 
-![](../sunnyside-agency-landing-page/src/design/active-states.jpg)
+![](src/design/active-states.jpg)
 
 ### Links
 
